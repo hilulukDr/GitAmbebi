@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G1114" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="menulist" id="gTV-IL-0wX" customClass="MenuListCollectionViewCell" customModule="ff" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="196" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="196" height="56"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9hy-4x-Kmh">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="56"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jDp-5Y-AWH">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="მთავარი" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDj-hP-cY2">
+                        <rect key="frame" x="0.0" y="0.0" width="196" height="56"/>
+                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="uDj-hP-cY2" secondAttribute="trailing" id="BPz-65-W42"/>
+                <constraint firstItem="uDj-hP-cY2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CBI-ah-lrp"/>
+                <constraint firstItem="uDj-hP-cY2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="b7Y-Al-dSX"/>
+                <constraint firstItem="9hy-4x-Kmh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cUQ-eb-KIM"/>
+                <constraint firstAttribute="bottom" secondItem="9hy-4x-Kmh" secondAttribute="bottom" id="cVJ-7L-rZp"/>
+                <constraint firstAttribute="bottom" secondItem="uDj-hP-cY2" secondAttribute="bottom" id="csS-9E-SXT"/>
+                <constraint firstAttribute="trailing" secondItem="9hy-4x-Kmh" secondAttribute="trailing" id="gpF-2c-gU8"/>
+                <constraint firstItem="9hy-4x-Kmh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ydN-n3-9kg"/>
+            </constraints>
+            <size key="customSize" width="196" height="56"/>
+            <connections>
+                <outlet property="MainPageColl" destination="9hy-4x-Kmh" id="Coh-a8-O9L"/>
+                <outlet property="MainPageLabel" destination="uDj-hP-cY2" id="Yeb-sS-Tcz"/>
+            </connections>
+            <point key="canvasLocation" x="-220" y="-102"/>
+        </collectionViewCell>
+    </objects>
+</document>
